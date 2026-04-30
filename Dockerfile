@@ -30,7 +30,6 @@ RUN XDEBUG_MODE=coverage vendor/bin/phpunit tests
 FROM base AS final
 WORKDIR /usr/src/watermeter
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY composer.json ./
 
 # Do not install dev dependencies on final build
