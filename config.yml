@@ -3,6 +3,7 @@ description: "Reads analog water (+ electricity, gas, ...) meters and provides a
 version: "1.4.1"
 slug: "watermeter"
 init: false
+image: nohn/watermeter:latest
 arch:
   - amd64
   - aarch64
